@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A fast, plain make.fun bounty board: live bounties, rewards, leaderboards and profiles, straight from make.fun's public API.">
+<title>make.fun board</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#/">make<span>.fun</span> board</a>
+  <nav class="topnav" aria-label="Sections">
+    <a href="#/">Board</a>
+    <a href="#/u/iqblq">Profile</a>
+  </nav>
+  <form class="topsearch" id="topsearch" role="search">
+    <input id="q" type="search" placeholder="Search bounties…" aria-label="Search bounties" autocomplete="off">
+  </form>
+  <span class="net" id="net" title="Requests to make.fun's API this visit">0 req</span>
+</header>
+<main id="view" aria-live="polite"></main>
+<footer class="foot">
+  <span id="foot-note">Live data from make.fun's public API. No sign-in, nothing is written.</span>
+  <span id="foot-stats"></span>
+</footer>
+<script type="module" src="/boot.js"></script>
+</body>
+</html>
